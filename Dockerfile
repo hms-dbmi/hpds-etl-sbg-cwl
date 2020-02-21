@@ -8,5 +8,8 @@ RUN bash bcftools_install.sh
 
 RUN pip3 install pandas numpy
 
+COPY entrypoint.sh entrypoint.sh
+
+ENTRYPOINT bash entrypoint.sh
 
 
