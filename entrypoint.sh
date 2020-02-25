@@ -7,7 +7,7 @@
 # if needed export HEAPSIZE=XXXXXX where XXXXXX is the number of MB of RAM to make available
 
 # This Python script addesses all the above
-python3 runHPDS.py --input myfile.vcf.gz --mapping myMappingFile.csv
+python3 configureHPDS.py --input myfile.vcf.gz --mapping myMappingFile.csv
 
 # Run Docker composer 
 docker-compose -f $HOME/pic-sure-hpds/docker/pic-sure-hpds-etl/docker-compose-variant-loader.yml up -d
