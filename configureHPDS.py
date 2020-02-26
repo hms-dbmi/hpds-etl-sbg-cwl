@@ -55,7 +55,7 @@ print("Creating vcfIndex.tsv file")
 # "21720","Dataset_Name","1506"
 # "61520","Dataset_Name","1605"
 
-
+# create_vcfIndex.py
 os.system('bcftools query -l '+args.input+' | awk \'{ print "\\""$0"\\""}\' > $HOME/patientMappings/VCF_sample_ids.txt')
 inFile1 = pd.read_csv("$HOME/patientMappings/VCF_sample_ids.txt", names=["samples"], dtype=str)
 inFile2 = pd.read_csv("$HOME/patientMappings/"+args.mapping, names=["samples", "dataSet", "patients"], dtype=str)
