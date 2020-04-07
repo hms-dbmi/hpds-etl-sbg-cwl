@@ -11,7 +11,7 @@ mkdir -p /opt/local/hpds/vcfInput
 # run HPDS variant loader
 # if needed export HEAPSIZE=XXXXXX where XXXXXX is the number of MB of RAM to make available
 cd /
-java -Xmx${HEAPSIZE:-2048}m -jar VCFLocalLoader-jar-with-dependencies.jar 
+java -Xmx${HEAPSIZE:-2048}m -jar UnifiedVCFLocalLoader-jar-with-dependencies.jar 
 
 # compress output of HPDS loader
 cd /opt/local/hpds/all
