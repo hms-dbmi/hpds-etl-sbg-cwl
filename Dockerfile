@@ -9,4 +9,4 @@ RUN bash bcftools_install.sh
 RUN pip3 install pandas numpy
 
 
-ENTRYPOINT "/bin/bash"
+ENTRYPOINT /bin/echo
