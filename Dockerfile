@@ -1,4 +1,4 @@
-FROM dbmi/pic-sure-hpds-etl:master_89933c2_no_entrypoint
+FROM dbmi/pic-sure-hpds-etl:master_ea7ea48_no_entrypoint
 
 RUN apt-get update -y && apt-get install -y gnupg openssl git build-essential 
 RUN apt-get install -y python3-dev zlib1g-dev libbz2-dev liblzma-dev libcurl4-gnutls-dev python3-pip && rm -rf /var/lib/apt/lists/*
